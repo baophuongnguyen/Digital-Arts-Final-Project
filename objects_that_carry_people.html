@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects That Carry People | War Artifacts</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        paper: {
+                            100: '#F7F5F0', 
+                            200: '#EAE5D9', 
+                            300: '#D5CDBA', 
+                        },
+                        military: {
+                            800: '#3A4036',
+                            900: '#262A24', 
+                        },
+                        rust: {
+                            600: '#A85C42', 
+                            700: '#8A4832',
+                        },
+                        brass: {
+                            500: '#B29A62', 
+                        },
+                        ink: {
+                            900: '#1A1A1A', 
+                            800: '#333333',
+                            700: '#4A4A4A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #F7F5F0; }
+        ::-webkit-scrollbar-thumb { background: #D5CDBA; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #B29A62; }
+
+        .bg-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23d5cdba' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        /* NEW: Infinite Marquee Animation for Tools */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+            width: max-content;
+        }
+    </style>
+</head>
+<body class="font-sans text-ink-900 bg-paper-100 antialiased selection:bg-brass-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-paper-100/95 backdrop-blur-md border-b border-paper-300 transition-all duration-300 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <button onclick="switchTab('exhibition')" class="flex-shrink-0 font-serif font-bold text-lg md:text-xl text-ink-900 tracking-wider uppercase hover:text-rust-600 transition-colors">
+                    Objects That Carry People
+                </button>
+                
+                <div class="hidden lg:flex items-center font-medium text-sm">
+                    <div id="nav-exhibition-links" class="flex space-x-6 mr-8 text-ink-800">
+                        <a href="#context" class="hover:text-rust-600 transition-colors">Context</a>
+                        <a href="#story" class="hover:text-rust-600 transition-colors">The Veteran's Story</a>
+                        <a href="#tour" class="hover:text-rust-600 transition-colors">3D Tour</a>
+                        <a href="#press-clippings" class="hover:text-rust-600 transition-colors">Press Clippings</a>
+                    </div>
+                    
+                    <div class="border-l border-paper-300 pl-8 flex space-x-6">
+                        <button onclick="switchTab('exhibition')" id="tab-btn-exhibition" class="text-rust-600 font-bold transition-colors">
+                            Exhibition
+                        </button>
+                        <button onclick="switchTab('documentation')" id="tab-btn-documentation" class="text-ink-800 hover:text-rust-600 transition-colors">
+                            Documentation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="tab-exhibition" class="block">
+        
+        <header id="context" class="relative pt-32 pb-24 md:pt-48 md:pb-32 bg-military-900 text-paper-100 overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-military-800 rounded-full blur-3xl opacity-40 pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div>
+                    <p class="text-brass-500 font-sans tracking-widest uppercase text-sm mb-6">
+                        Uncovering the Story behind the War Artifacts
+                    </p>
+                    <h1 class="font-serif text-5xl md:text-7xl font-bold mb-8 leading-tight">
+                        Objects That <br><span>Carry People</span>
+                    </h1>
+                    
+                    <div class="font-serif text-lg md:text-xl leading-relaxed text-paper-200 space-y-6">
+                        <p>
+                            Today, many of us carry our memories in smartphones, laptops, and cloud storage. Photos, messages, and digital archives help us remember the people, places, and moments that shape our lives. 
+                        </p>
+                        <p>
+                            But what happened before these technologies existed? For soldiers during the Resistance War against America, memories were often carried in a different way.
+                        </p>
+                        <p class="text-brass-500 mt-8 text-xl border-l-4 border-brass-500 pl-4">
+                            "If someone were to tell your story one day, which objects would they choose?"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-rust-600 translate-x-4 translate-y-4 rounded-sm transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                    <img src="https://i.postimg.cc/76jzn8hL/Grandpa-stuff-1.jpg" 
+                         alt="Grandpa's artifacts" 
+                         class="relative z-10 w-full h-auto max-h-[600px] object-cover rounded-sm shadow-2xl border-4 border-white/10 group-hover:border-white/20 transition-all duration-500">
+                </div>
+            </div>
+        </header>
+
+        <section id="story" class="py-24 bg-paper-100 bg-texture">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    
+                    <div class="relative group sticky top-24">
+                        <div class="absolute inset-0 bg-rust-600 translate-x-4 translate-y-4 rounded-sm transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                        
+                        <img src="https://i.postimg.cc/sgKQCt83/Nhi-Grandpa.jpg" 
+                             alt="Portrait of Mr. Nguyễn Đình Thảo" 
+                             class="relative z-10 w-full h-auto max-h-[700px] object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-700 shadow-xl border-8 border-white">
+                        
+                        <div class="absolute bottom-4 left-4 z-20 bg-white/95 px-4 py-2 shadow-sm border border-paper-300">
+                            <p class="font-sans text-xs text-ink-900 font-semibold uppercase tracking-wider">Archival Photo</p>
+                            <p class="font-serif text-sm text-ink-800 italic mt-1">Mr. Nguyễn Đình Thảo</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6 text-ink-900">
+                            The Story of <br>Mr. Nguyễn Đình Thảo
+                        </h2>
+                        <div class="w-16 h-1 bg-rust-600 mb-8"></div>
+                        
+                        <div class="space-y-6 font-serif text-lg text-ink-800 leading-relaxed mb-12">
+                            <p>
+                                This project invites you into Mr. Nguyễn Đình Thảo's home through an interactive environment. These artifacts belonged to one veteran, but they reflect the experiences of countless soldiers.
+                            </p>
+                            <p>
+                                More than military equipment, they became vessels of memory that carry stories of resilience, companionship, and survival. Every scuff on a canteen, every faded letter, and every carefully preserved uniform speaks volumes of a time when the weight of history was carried on one's shoulders.
+                            </p>
+                        </div>
+
+                        <div class="border border-paper-300 bg-white shadow-md p-2 rounded-sm relative group cursor-pointer" onclick="openStoryMap()">
+                            <div class="bg-paper-100 border-b border-paper-300 px-4 py-3 flex items-center justify-between">
+                                <h3 class="font-sans font-bold text-sm uppercase tracking-widest text-ink-900 flex items-center">
+                                    <svg class="w-4 h-4 mr-2 text-rust-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                                    Interactive StoryMap
+                                </h3>
+                                <span class="font-sans text-xs text-ink-700">Trace the Journey</span>
+                            </div>
+                            
+                            <div class="relative w-full h-[400px] md:h-[500px] bg-paper-200 overflow-hidden flex items-center justify-center">
+                                <iframe src="https://uploads.knightlab.com/storymapjs/6d15541460765f52d024f217d96afabb/from-classroom-to-battlefield/index.html" frameborder="0" width="100%" height="800"></iframe>
+                                
+                                <div class="absolute inset-0 bg-military-900/60 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center backdrop-blur-sm">
+                                    <div class="w-16 h-16 bg-rust-600 rounded-full flex items-center justify-center mb-4 text-white shadow-lg transform group-hover:scale-110 transition-transform">
+                                        <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                                    </div>
+                                    <span class="font-sans font-bold text-lg tracking-widest uppercase text-white drop-shadow-md">Click to see in detail</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tour" class="py-24 bg-military-900 text-paper-100 border-y-8 border-military-800">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                
+                <div class="text-center mb-12">
+                    <p class="text-brass-500 font-sans tracking-widest uppercase text-xs mb-4">Digital Exhibition Space</p>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Interactive 3D Environment</h2>
+                    <p class="font-sans text-paper-200 max-w-2xl mx-auto text-lg">
+                        Step inside Mr. Thảo's room. Explore the preserved memories in this digital twin.
+                    </p>
+                </div>
+                
+                <div class="mt-12 bg-military-800/50 p-8 md:p-10 rounded-sm border border-military-800 backdrop-blur-sm shadow-inner">
+                    <h3 class="font-serif text-2xl font-bold text-brass-500 mb-8 border-b border-military-700 pb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Exhibition Guide: How to Immerse Yourself
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 font-sans text-paper-200">
+                        
+                        <div>
+                            <h4 class="font-bold text-white uppercase tracking-widest text-sm mb-5 flex items-center">
+                                <span class="bg-rust-600 w-2 h-2 rounded-full mr-2"></span> Navigating the Space
+                            </h4>
+                            <ul class="space-y-4 text-sm leading-relaxed marker:text-brass-500 list-disc pl-5">
+                                <li><strong>Change views:</strong> There are 3 views of the room. Switch between them by clicking the menu (top-left corner) or the arrows on the floor.</li>
+                                <li><strong>Look around:</strong> Click and drag the screen to view the entire room.</li>
+                                <li><strong>Autorotate:</strong> To pause the automatic rotation of the space, click the button in the top-right corner.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-white uppercase tracking-widest text-sm mb-5 flex items-center">
+                                <span class="bg-rust-600 w-2 h-2 rounded-full mr-2"></span> Discovering the Objects
+                            </h4>
+                            <ul class="space-y-4 text-sm leading-relaxed marker:text-brass-500 list-disc pl-5">
+                                <li><strong>Find the artifacts:</strong> Click on the <span class="bg-black/50 px-2 py-0.5 rounded-full border border-brass-500/50 text-brass-500 font-serif italic mx-1">i</span> icons for a closer look and to uncover the stories behind them.</li>
+                                <li><strong>Explore media:</strong> Play with the 3D views or scroll to view all photos if an artifact features a carousel.</li>
+                                <li><strong>Listen to history:</strong> As you read, click on the <span class="text-[#eab308] underline decoration-[#eab308] font-medium mx-1">yellow underlined sentences</span> to listen to Mr. Thảo’s original recorded voice. Click again to close the audio.</li>
+                                <li><strong>Track your progress:</strong> You can see the list of objects in a room view on the top middle bar. Make sure to find all of them!</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mt-12 relative w-full aspect-[4/3] md:aspect-video bg-black rounded-sm overflow-hidden border-2 border-brass-500/30 shadow-[0_0_50px_rgba(0,0,0,0.5)] z-20 group">
+                    <iframe src="https://suzinguyenhoang.github.io/digitalartsandsciences/?fbclid=IwY2xjawSbNfFleHRuA2FlbQIxMABicmlkETFQRGh0OXJEUUh0clEwV0ZWc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmi8g20Chqw3USeeFBzUwC35mpMAEE_PjzuIBd3UXDtnjyC9bS-ECcNxfofP_aem_gZq2YMfyWeyFFlnPJg28uA" class="absolute inset-0 w-full h-full border-0" allow="fullscreen; xr-spatial-tracking; autoplay; camera; microphone" allowfullscreen></iframe>
+                    
+                    <button onclick="openTourModal()" class="absolute top-4 right-4 z-30 bg-military-900/90 text-white px-4 py-2 rounded-sm opacity-80 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300 hover:bg-rust-600 flex items-center shadow-lg border border-white/20 transform hover:scale-105">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l5-5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                        <span class="text-sm font-bold tracking-wider uppercase">Full Screen</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="press-clippings" class="py-24 bg-paper-100 border-t border-paper-300">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                
+                <div class="text-center mb-16">
+                    <p class="text-military-800 font-sans tracking-widest uppercase text-xs mb-4">Public Memory</p>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4 text-ink-900">The Veteran in the Press</h2>
+                    <div class="font-sans text-ink-800 max-w-3xl mx-auto space-y-4 text-lg leading-relaxed">
+                        <p>
+                            History is often written in broad strokes, but it is anchored by physical things. While Mr. Thảo’s private diaries reveal the quiet, internal struggles of a soldier, these published clippings show how his story and his artifacts stepped out of the jungle and into the collective memory of the nation. 
+                        </p>
+                        <p>
+                            Here, the press captures the exact moments his belongings transitioned from tools of survival into symbols of peace. Through these public records, we see a collection of war-torn gear validated as heritage, and we witness the ultimate resilience of the man who carried them: returning from the battlefield to hold a piece of chalk once again.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-paper-300 shadow-2xl flex flex-col md:flex-row overflow-hidden h-[750px] group">
+                    
+                    <div class="md:w-1/2 bg-paper-200 relative border-b md:border-b-0 md:border-r border-paper-300 p-8 flex items-center justify-center">
+                        <div class="absolute top-4 left-1/2 -translate-x-1/2 w-32 h-8 bg-white/40 backdrop-blur-sm border border-white/20 -rotate-2 shadow-sm z-20"></div>
+                        
+                        <img id="carousel-img" src="" alt="Newspaper Clipping" class="max-h-[600px] w-auto object-contain mix-blend-multiply opacity-90 transition-opacity duration-500">
+                        
+                        <div class="absolute bottom-4 left-4 font-sans text-xs text-ink-700 tracking-widest uppercase font-bold">
+                            Document <span id="slide-counter">1 / 3</span>
+                        </div>
+                    </div>
+
+                    <div class="md:w-1/2 p-8 md:p-12 flex flex-col relative bg-[#fcfbf9] h-full">
+                        
+                        <div class="flex justify-between items-end mb-4 border-b border-paper-300 pb-2">
+                            <p class="font-sans text-xs text-rust-600 uppercase tracking-widest">OCR Digitization</p>
+                            <button id="lang-toggle-btn" class="font-sans text-xs font-semibold text-military-800 hover:text-rust-600 transition-colors flex items-center bg-paper-200 px-3 py-1 rounded-sm border border-paper-300">
+                                <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                                <span id="lang-toggle-text">Translate to English</span>
+                            </button>
+                        </div>
+                        
+                        <h3 id="carousel-title" class="font-serif font-bold text-2xl md:text-3xl text-ink-900 mb-4 transition-all duration-300"></h3>
+                        
+                        <div class="flex-grow relative overflow-hidden mb-8 border border-paper-200 shadow-inner rounded-sm bg-paper-100">
+                            <div id="carousel-ocr" class="absolute inset-0 overflow-y-auto p-6 font-mono text-sm leading-relaxed text-ink-800 transition-all duration-300">
+                            </div>
+                        </div>
+
+                        <div id="analysis-container" class="absolute bottom-24 left-8 right-8 z-30 hidden bg-military-900 text-paper-200 p-6 border-l-4 border-rust-600 shadow-xl transform transition-all duration-500 translate-y-4 opacity-0 max-h-[40%] overflow-y-auto">
+                            <h4 class="font-sans text-xs uppercase tracking-widest text-brass-500 mb-2">Curator's Analysis</h4>
+                            <p id="carousel-analysis" class="font-serif text-base leading-relaxed"></p>
+                        </div>
+
+                        <div class="pt-6 border-t border-paper-300 flex flex-wrap gap-4 items-center justify-between mt-auto">
+                            
+                            <button id="toggle-analysis-btn" class="font-sans text-base md:text-lg font-semibold flex items-center bg-military-900 text-paper-100 px-6 py-3 rounded-sm shadow-md hover:bg-rust-600 hover:shadow-lg transition-all duration-300 group z-40">
+                                <svg id="toggle-icon" class="w-6 h-6 mr-3 transform transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span id="toggle-text">Deep Dive: View Analysis</span>
+                            </button>
+
+                            <div class="flex space-x-3 z-40">
+                                <button id="prev-btn" class="w-12 h-12 flex items-center justify-center bg-paper-200 hover:bg-military-800 hover:text-white text-ink-900 rounded-sm transition-all shadow-sm border border-paper-300" aria-label="Previous clipping">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                </button>
+                                <button id="next-btn" class="w-12 h-12 flex items-center justify-center bg-paper-200 hover:bg-military-800 hover:text-white text-ink-900 rounded-sm transition-all shadow-sm border border-paper-300" aria-label="Next clipping">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-paper-200 py-20 border-t border-paper-300 text-center">
+            <div class="max-w-3xl mx-auto px-6">
+                <p class="text-rust-600 font-sans tracking-widest uppercase text-xs mb-4">Behind the Scenes</p>
+                <h3 class="font-serif text-3xl font-bold text-ink-900 mb-6">Discover the Methodology</h3>
+                <p class="font-sans text-ink-800 mb-10 leading-relaxed">
+                    Explore the academic requirements, the digital humanities tools used to preserve these artifacts, and the reflections from the team behind this exhibition.
+                </p>
+                <button onclick="switchTab('documentation')" class="inline-flex items-center px-8 py-4 bg-rust-600 text-white font-sans font-semibold tracking-widest uppercase text-sm rounded-sm hover:bg-military-800 transition-colors shadow-md group">
+                    Read Project Documentation
+                    <svg class="w-5 h-5 ml-3 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </button>
+            </div>
+        </div>
+
+    </div> 
+    
+    <div id="tab-documentation" class="hidden">
+        
+        <section id="documentation" class="pt-40 pb-32 bg-paper-100 min-h-screen bg-texture">
+            <div class="max-w-4xl mx-auto px-6 lg:px-8">
+                
+                <div class="text-center mb-16">
+                    <p class="text-rust-600 font-sans tracking-widest uppercase text-sm mb-4">Academic Requirements</p>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-ink-900 mb-6">Project Documentation</h2>
+                    <div class="w-12 h-1 bg-brass-500 mx-auto"></div>
+                </div>
+
+                <article class="space-y-16">
+                    
+                    <section>
+                        <h3 class="font-sans font-bold text-2xl text-ink-900 mb-6 flex items-center border-b border-paper-300 pb-4">
+                            <span class="text-rust-600 mr-3">01.</span> The Process
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-6">
+                            
+                            <div class="lg:col-span-7 font-sans text-lg text-ink-800 leading-relaxed space-y-6">
+                                <p>
+                                    This project began with a simple question: <span class="bg-brass-500/30 px-2 py-0.5 rounded-sm text-ink-900">How can we preserve and communicate personal histories through digital media?</span>
+                                </p>
+                                <p>
+                                    After deciding to focus on the theme of human experiences during wartime, we reached out to Mr. Nguyễn Đình Thảo, the grandfather of our team member Hoàng Nhi. As a former soldier who fought during the Vietnam War and still preserves many of his personal belongings from that period, Mr. Thảo became the central storyteller of our project.
+                                </p>
+                                
+                                <h4 class="font-sans font-bold text-base uppercase tracking-widest text-ink-900 mt-8 mb-4">Main Steps of Our Project:</h4>
+                                <ul class="list-none space-y-4 font-sans text-base text-ink-800">
+                                    <li class="flex items-start">
+                                        <span class="text-rust-600 mr-3 mt-1">✦</span>
+                                        <span><strong>Conducting an in-depth oral history interview</strong> (project foundation) on stories beyond the functions of each artifact: the memories, experiences, and emotions attached to the objects.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-rust-600 mr-3 mt-1">✦</span>
+                                        <span><strong>Capturing a 360-degree photographic environment</strong> (Mr. Thảo’s current home where he stored the artifacts) and artifacts using Scaniverse (Mesh) and RealityScan.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-rust-600 mr-3 mt-1">✦</span>
+                                        <span><strong>Digitizing historical documents</strong>, including certificates, commendations, newspaper articles, diaries, and poetry notebooks using AI and VietOCR.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-rust-600 mr-3 mt-1">✦</span>
+                                        <span><strong>Designing the narrative structure</strong> of the exhibition.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-rust-600 mr-3 mt-1">✦</span>
+                                        <span><strong>Creating a simple interactive 360-degree virtual environment</strong> with hotspots using Marzipano.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-rust-600 mr-3 mt-1">✦</span>
+                                        <span><strong>Incorporating Mr. Thảo’s original recorded voice</strong> throughout the exhibition.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-rust-600 mr-3 mt-1">✦</span>
+                                        <span><strong>Deploying and leveraging our website</strong> and virtual tour using Github and AI-assisted tools such as ChatGPT and Gemini.</span>
+                                    </li>
+                                </ul>
+                                
+                                <p class="mt-6 text-base">
+                                    Through this process, we transformed personal memories, physical artifacts, and historical documents into an accessible digital archive that preserves and shares one individual's experience while connecting it to broader questions of memory, history, and human resilience.
+                                </p>
+                            </div>
+
+                            <div class="lg:col-span-5 relative group mt-8 lg:mt-0">
+                                <div class="absolute inset-0 bg-rust-600 translate-x-3 translate-y-3 rounded-sm transition-transform group-hover:translate-x-1 group-hover:translate-y-1"></div>
+                                
+                                <img src="https://i.postimg.cc/9fdWjTzB/Process-at-house-2.jpg" 
+                                     alt="The team digitizing artifacts" 
+                                     class="relative z-10 w-full h-auto object-cover rounded-sm shadow-xl border-4 border-white sepia-[.1] hover:sepia-0 transition-all duration-500">
+                                
+                                <div class="absolute -bottom-4 -left-4 z-20 bg-white/95 px-4 py-2 shadow-md border border-paper-300 transform -rotate-2">
+                                    <p class="font-sans text-xs text-ink-900 font-semibold uppercase tracking-wider">Fieldwork</p>
+                                    <p class=" text-sm text-ink-800 mt-1">Digitizing the artifacts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="my-20 space-y-8">
+                        
+                        <div class="relative w-full h-[300px] md:h-[400px] rounded-sm overflow-hidden shadow-xl border-4 border-white group">
+                            <div class="absolute inset-0 bg-military-900/10 z-10 group-hover:bg-transparent transition-colors duration-700 pointer-events-none"></div>
+                            
+                            <img src="https://i.postimg.cc/3r6znNxH/process-at-house.jpg" 
+                                 alt="360 Panorama of Mr. Thảo's home" 
+                                 class="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-[3000ms] ease-out">
+                            
+                            <div class="absolute bottom-6 left-6 z-20 bg-white/95 px-5 py-3 shadow-md border border-paper-300 backdrop-blur-sm pointer-events-none">
+                                <p class="font-sans text-xs text-rust-600 font-bold uppercase tracking-widest mb-1">Spatial Capture</p>
+                                <p class="text-sm text-ink-900 ">360° environment scanning at Mr. Thảo's home</p>
+                            </div>
+                        </div>
+
+                        <div class="relative w-full rounded-sm overflow-hidden shadow-xl border-4 border-white bg-black">
+                            <div style="position:relative; width:100%; height:0px; padding-bottom:50.000%">
+                                <iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/820vnl?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <section>
+                        <h3 class="font-sans font-bold text-2xl text-ink-900 mb-6 flex items-center border-b border-paper-300 pb-4">
+                            <span class="text-rust-600 mr-3">02.</span> Team Contributions
+                        </h3>
+                        <div class="font-sans text-lg text-ink-800 leading-relaxed space-y-6">
+                            <p>
+                                This project was a collaborative effort, with all team members contributing throughout the research, documentation, digitization, and development process.
+                            </p>
+
+                            <div class="relative bg-white border border-paper-300 shadow-xl overflow-hidden group mb-8 mt-8">
+                                <div id="team-content-wrapper" class="flex flex-col md:flex-row min-h-[450px] transition-opacity duration-300">
+                                    
+                                    <div class="w-full md:w-5/12 relative bg-paper-200">
+                                        <img id="team-img" src="" alt="Team member" class="w-full h-full object-cover transition-all duration-500">
+                                        
+                                        <div id="team-img-overlay" class="absolute inset-0 flex items-center justify-center bg-black/20 hidden pointer-events-none">
+                                            <span class="text-white font-bold text-xl md:text-2xl text-center uppercase tracking-widest drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)] border-y-2 border-white py-2 px-4 rotate-[-10deg]">Me when finals come</span>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="w-full md:w-7/12 p-8 md:p-12 flex flex-col justify-center relative bg-[#fcfbf9]">
+                                        <h4 id="team-name" class="font-bold text-ink-900 uppercase tracking-widest text-xl md:text-2xl mb-6 text-rust-600 border-b border-paper-200 pb-4">Name</h4>
+                                        <ul id="team-tasks" class="list-disc pl-5 space-y-3 text-base text-ink-800 leading-relaxed marker:text-brass-500 mb-12">
+                                            </ul>
+
+                                        <div class="absolute bottom-6 right-6 flex space-x-2">
+                                            <button id="team-prev" class="w-10 h-10 flex items-center justify-center bg-paper-200 hover:bg-military-800 hover:text-white text-ink-900 rounded-sm transition-all shadow-sm border border-paper-300" aria-label="Previous member">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                            </button>
+                                            <button id="team-next" class="w-10 h-10 flex items-center justify-center bg-paper-200 hover:bg-military-800 hover:text-white text-ink-900 rounded-sm transition-all shadow-sm border border-paper-300" aria-label="Next member">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bg-paper-200/50 p-6 md:p-8 mt-8 border-l-4 border-brass-500">
+                                <h4 class="font-sans font-bold text-sm uppercase tracking-widest text-ink-900 mb-3">Shared Responsibilities</h4>
+                                <p class="text-base font-sans">
+                                    Beyond their individual roles, all team members participated in the fieldwork and documentation process. This included interviewing Mr. Thảo, photographing and scanning artifacts, collecting and organizing historical materials, discussing project concepts, reviewing content, testing exhibition features, and refining the final user experience. The project was shaped through continuous collaboration and collective decision-making at every stage of development.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section>
+                        <h3 class="font-sans font-bold text-2xl text-ink-900 mb-6 flex items-center border-b border-paper-300 pb-4">
+                            <span class="text-rust-600 mr-3">03.</span> Final Reflection
+                        </h3>
+                        <div class="font-sans text-lg text-ink-800 leading-relaxed space-y-6">
+                            <p>
+                                Documenting the objects helps us understand the person behind them and the situation in which they were the person’s fortune.
+                            </p>
+                            <p>
+                                Each artifact revealed a different aspect of life during wartime. A hammock was not simply a place to sleep, but a shelter against months of rain in the Trường Sơn forests. A helmet was not only protective equipment, but also a seat, a water container, and a silent witness to a moment when a fragment of shrapnel nearly took a life. A notebook contained more than written words; it preserved poems, memories, and thoughts of a young teacher who was separated from the woman he loved and did not know whether he would ever return home.
+                            </p>
+                            
+                            <div class="flex justify-center my-8">
+                                <div class="w-16 h-[1px] bg-rust-600/30"></div>
+                            </div>
+
+                            <p>
+                                One of the most meaningful aspects of this project was the personal connection many team members felt with Mr. Thảo's experiences. Several of us have grandparents who also lived through the war, yet we had rarely asked them about their lives during that period. Listening to Mr. Thảo made us realize how much history exists within our own families, often preserved only through memories, stories, and everyday objects. It reminded us that the generation who experienced these events firsthand will not be here forever to tell their stories, making preservation more important than ever.
+                            </p>
+                            <p>
+                                As students in a Digital Humanities course, we also learned that technology knowledge and skills are valuable as they enhance our ability to preserve, communicate, and make human stories accessible to others. With a view to creating the most immersive and realistic experience online, we have learned how to use and integrate many tools and techniques throughout the projects, and they all paid off with everything we have been able to keep forever.
+                            </p>
+                            <p>
+                                Most importantly, this project (and other Mini’s one!) changed the way we think about history. We no longer see history solely as something contained in textbooks or official records. We now understand that history can also live in a worn hammock, a faded backpack, a handwritten letter, or a notebook filled with poems. These ordinary objects carry extraordinary stories because they carry traces of the people who once relied on them.
+                            </p>
+                            <p class="font-bold text-ink-900">
+                                This project taught us that preserving history is preserving humanity, helping to shape how we understand ourselves today. We entered this project hoping to document a collection of wartime objects. We leave it having gained a deeper appreciation for the lives and memories of those who have sacrificed many things for our nation.
+                            </p>
+                        </div>
+                    </section>
+
+
+<section>
+                        <h3 class="font-sans font-bold text-2xl text-ink-900 mb-6 flex items-center border-b border-paper-300 pb-4">
+                            <span class="text-rust-600 mr-3">04.</span> Acknowledgments
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                            
+                            <div class="lg:col-span-7 font-sans text-lg text-ink-800 leading-relaxed bg-white p-8 border border-paper-300 rounded-sm shadow-sm space-y-4">
+                                <p class="mb-8 italic text-xl text-ink-700 pb-4 border-b border-paper-200 text-center">
+                                    "This project would not have been possible without the immense trust and generosity of those who shared their stories."
+                                </p>
+                                <p class="text-base">
+                                    We would like to express our deepest gratitude to Mr. Nguyễn Đình Thảo for generously sharing his time, memories, personal artifacts, diaries, photographs, and documents with us. Without his willingness to revisit and preserve these stories, this project would not have been possible.
+                                </p>
+                                <p class="text-base">
+                                    We are also grateful to Mr. Thảo's family, especially Hoàng Nhi, for facilitating access to the materials and supporting the documentation process.
+                                </p>
+                                <p class="text-base">
+                                    Finally, we would like to thank our instructors and peers for their feedback throughout the development of this project, as well as the creators of the digital tools that enabled us to preserve and present these stories in new and accessible ways.
+                                </p>
+                            </div>
+
+                            <div class="lg:col-span-5 relative group mt-8 lg:mt-0">
+                                <div class="absolute inset-0 bg-rust-600 translate-x-3 translate-y-3 rounded-sm transition-transform group-hover:translate-x-1 group-hover:translate-y-1"></div>
+                                
+                                <img src="https://i.postimg.cc/FRBmbQKW/Ong-ba-chi-nhi.jpg" 
+                                     alt="Mr. Nguyễn Đình Thảo and Family" 
+                                     class="relative z-10 w-full h-auto object-cover rounded-sm shadow-xl border-4 border-white transition-all duration-500">
+                                
+                                <div class="absolute -bottom-4 -right-4 z-20 bg-white/95 px-4 py-2 shadow-md border border-paper-300 transform rotate-2">
+                                    <p class="font-sans text-xs text-ink-900 font-semibold uppercase tracking-wider">With Gratitude</p>
+                                    <p class="text-sm text-ink-800 italic mt-1">Mr. Thảo and family</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section id="tools">
+                        <h3 class="font-sans font-bold text-2xl text-ink-900 mb-2 flex items-center border-b border-paper-300 pb-4">
+                            <span class="text-rust-600 mr-3">05.</span> Digital Humanities Toolkit
+                        </h3>
+                        <p class="text-ink-700 mb-8">Software and platforms utilized to capture, process, and present this exhibition.</p>
+                        
+                        <div class="relative flex overflow-hidden py-4 w-full">
+                            <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-paper-100 to-transparent z-10 pointer-events-none"></div>
+                            <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-paper-100 to-transparent z-10 pointer-events-none"></div>
+
+                            <div class="flex animate-marquee hover:[animation-play-state:paused]">
+                                
+                                <div class="flex gap-6 pr-6">
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://www.drupal.org/files/project-images/storymapjs.png" class="max-w-full max-h-full object-contain" alt="StoryMapJS">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoh5SY3J2BsoecJ8TsxtGX-34_b5HCIG6PIA&s" class="max-w-full max-h-full object-contain" alt="GitHub">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://vatvostudio.vn/wp-content/uploads/2025/07/Google-doi-logo-moi-cho-Gemini-voi-dai-mau-cau-vong-.jpg" class="max-w-full max-h-full object-contain" alt="Gemini">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://www.shutterstock.com/image-vector/chatgpt-logo-vector-illustration-chat-600nw-2659160215.jpg" class="max-w-full max-h-full object-contain" alt="ChatGPT">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://khuenguyencreator.com/wp-content/uploads/2021/05/c%C3%A0i-%C4%91%E1%BA%B7t-visual-studio-code.jpg" class="max-w-full max-h-full object-contain" alt="VS Code">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://www.internetmatters.org/wp-content/uploads/2025/09/CapCut-feature.webp" class="max-w-full max-h-full object-contain" alt="CapCut">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhlOZrixtxrrCDdqq6obaH0w_0PNo3UjyInFdepOI9GA&s=10" class="max-w-full max-h-full object-contain" alt="Marzipano">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://i2.wp.com/www.3dvista.com/wp-content/uploads/2020/07/logo_3dvista_white.png?fit=790%2C282&ssl=1" class="max-w-full max-h-full object-contain invert" alt="3DVista">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd2YhEQmbrR3ANpcuaNwWoohA1uYUdpOCdJA&s" class="max-w-full max-h-full object-contain" alt="RealityScan">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://bochickenstore.com/storage/thumb/dich-vu-mua-sketchfa_1606892273.jpg" class="max-w-full max-h-full object-contain" alt="Sketchfab">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://www.mp3tourl.com/logo.png" class="max-w-full max-h-full object-contain" alt="MP3toURL">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://r2cdn.expertphotography.com/products/8835/0-postimage-1.png" class="max-w-full max-h-full object-contain" alt="Postimage">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr3HPUr668W80H7H8U8Oz64g42Y3qYm3rOLw&s" class="max-w-full max-h-full object-contain" alt="Scaniverse">
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-6 pr-6">
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://www.drupal.org/files/project-images/storymapjs.png" class="max-w-full max-h-full object-contain" alt="StoryMapJS">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoh5SY3J2BsoecJ8TsxtGX-34_b5HCIG6PIA&s" class="max-w-full max-h-full object-contain" alt="GitHub">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://vatvostudio.vn/wp-content/uploads/2025/07/Google-doi-logo-moi-cho-Gemini-voi-dai-mau-cau-vong-.jpg" class="max-w-full max-h-full object-contain" alt="Gemini">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://www.shutterstock.com/image-vector/chatgpt-logo-vector-illustration-chat-600nw-2659160215.jpg" class="max-w-full max-h-full object-contain" alt="ChatGPT">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://khuenguyencreator.com/wp-content/uploads/2021/05/c%C3%A0i-%C4%91%E1%BA%B7t-visual-studio-code.jpg" class="max-w-full max-h-full object-contain" alt="VS Code">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://www.internetmatters.org/wp-content/uploads/2025/09/CapCut-feature.webp" class="max-w-full max-h-full object-contain" alt="CapCut">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://www.marzipano.net/img/logo.png" class="max-w-full max-h-full object-contain" alt="Marzipano">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://i2.wp.com/www.3dvista.com/wp-content/uploads/2020/07/logo_3dvista_white.png?fit=790%2C282&ssl=1" class="max-w-full max-h-full object-contain invert" alt="3DVista">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd2YhEQmbrR3ANpcuaNwWoohA1uYUdpOCdJA&s" class="max-w-full max-h-full object-contain" alt="RealityScan">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://bochickenstore.com/storage/thumb/dich-vu-mua-sketchfa_1606892273.jpg" class="max-w-full max-h-full object-contain" alt="Sketchfab">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://www.mp3tourl.com/logo.png" class="max-w-full max-h-full object-contain" alt="MP3toURL">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://r2cdn.expertphotography.com/products/8835/0-postimage-1.png" class="max-w-full max-h-full object-contain" alt="Postimage">
+                                    </div>
+                                    <div class="w-32 md:w-40 h-20 md:h-24 flex items-center justify-center bg-white border border-paper-300 rounded-sm shadow-sm p-4 shrink-0 hover:scale-105 transition-transform duration-300">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr3HPUr668W80H7H8U8Oz64g42Y3qYm3rOLw&s" class="max-w-full max-h-full object-contain" alt="Scaniverse">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                    ```
+
+                </article>
+
+            </div>
+        </section>
+
+    </div> <footer class="bg-military-900 text-paper-300 py-12 border-t border-military-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <span class="font-serif text-xl text-paper-100 tracking-wide uppercase block mb-2">Objects That Carry People</span>
+                <span class="font-sans text-xs text-paper-300/70">&copy; 2026 Historical Exhibition Project. All rights reserved.</span>
+            </div>
+            
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-3 bg-military-800 rounded-full hover:bg-rust-600 hover:text-white transition-colors text-paper-300 group" aria-label="Scroll to top">
+                <svg class="w-5 h-5 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+            </button>
+        </div>
+    </footer>
+    
+    <div id="storymap-modal" class="fixed inset-0 z-[100] hidden bg-black/95 backdrop-blur-md flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+        <button onclick="closeStoryMap()" class="absolute top-4 right-4 md:top-6 md:right-8 z-50 p-3 bg-paper-200 hover:bg-rust-600 hover:text-white text-ink-900 rounded-sm transition-colors shadow-lg group" aria-label="Close StoryMap">
+            <svg class="w-6 h-6 transform transition-transform group-hover:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="absolute top-6 left-1/2 -translate-x-1/2 z-50 block md:hidden text-paper-300 text-xs tracking-widest uppercase font-sans animate-pulse">
+            Rotate phone for best view
+        </div>
+        <div id="storymap-modal-container" class="w-full h-full md:w-[95%] md:h-[90%] bg-paper-200 relative shadow-2xl overflow-hidden md:rounded-sm md:border border-paper-300 transition-all duration-500 scale-95">
+            <iframe id="storymap-iframe" src="" frameborder="0" width="100%" height="100%" class="w-full h-full"></iframe>
+        </div>
+    </div>
+
+    <div id="tour-modal" class="fixed inset-0 z-[100] hidden bg-black/95 backdrop-blur-md flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+        <button onclick="closeTourModal()" class="absolute top-4 right-4 md:top-6 md:right-8 z-50 p-3 bg-paper-200 hover:bg-rust-600 hover:text-white text-ink-900 rounded-sm transition-colors shadow-lg group" aria-label="Close Tour">
+            <svg class="w-6 h-6 transform transition-transform group-hover:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="absolute top-6 left-1/2 -translate-x-1/2 z-50 block md:hidden text-paper-300 text-xs tracking-widest uppercase font-sans animate-pulse">
+            Rotate phone for best view
+        </div>
+        <div id="tour-modal-container" class="w-full h-full md:w-[95%] md:h-[90%] bg-black relative shadow-2xl overflow-hidden md:rounded-sm md:border border-military-800 transition-all duration-500 scale-95">
+            <iframe id="tour-modal-iframe" src="" frameborder="0" width="100%" height="100%" class="w-full h-full" allow="fullscreen; xr-spatial-tracking; autoplay; camera; microphone" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        // --- 1. TAB SWITCHING LOGIC ---
+        function switchTab(tabId) {
+            const exTab = document.getElementById('tab-exhibition');
+            const docTab = document.getElementById('tab-documentation');
+            const btnEx = document.getElementById('tab-btn-exhibition');
+            const btnDoc = document.getElementById('tab-btn-documentation');
+            const navLinks = document.getElementById('nav-exhibition-links');
+
+            if (tabId === 'exhibition') {
+                exTab.classList.remove('hidden');
+                docTab.classList.add('hidden');
+                
+                btnEx.classList.add('text-rust-600', 'font-bold');
+                btnEx.classList.remove('text-ink-800');
+                btnDoc.classList.remove('text-rust-600', 'font-bold');
+                btnDoc.classList.add('text-ink-800');
+                
+                navLinks.classList.remove('hidden');
+                navLinks.classList.add('flex');
+            } else {
+                exTab.classList.add('hidden');
+                docTab.classList.remove('hidden');
+                
+                btnDoc.classList.add('text-rust-600', 'font-bold');
+                btnDoc.classList.remove('text-ink-800');
+                btnEx.classList.remove('text-rust-600', 'font-bold');
+                btnEx.classList.add('text-ink-800');
+                
+                navLinks.classList.add('hidden');
+                navLinks.classList.remove('flex');
+                
+                window.scrollTo({ top: 0, behavior: 'auto' });
+            }
+        }
+        
+        // --- 3. STORYMAP MODAL LOGIC ---
+        function openStoryMap() {
+            const modal = document.getElementById('storymap-modal');
+            const container = document.getElementById('storymap-modal-container');
+            const iframe = document.getElementById('storymap-iframe');
+            
+            iframe.src = "https://uploads.knightlab.com/storymapjs/6d15541460765f52d024f217d96afabb/from-classroom-to-battlefield/index.html";
+            
+            modal.classList.remove('hidden');
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+            
+            if (window.innerWidth < 768) {
+                if (modal.requestFullscreen) {
+                    modal.requestFullscreen().catch(err => console.log("Fullscreen API blocked by browser", err));
+                } else if (modal.webkitRequestFullscreen) {
+                    modal.webkitRequestFullscreen();
+                }
+                
+                if (screen.orientation && screen.orientation.lock) {
+                    screen.orientation.lock('landscape').catch(err => console.log("Orientation lock not supported", err));
+                }
+            }
+
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+                container.classList.remove('scale-95');
+                container.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeStoryMap() {
+            const modal = document.getElementById('storymap-modal');
+            const container = document.getElementById('storymap-modal-container');
+            const iframe = document.getElementById('storymap-iframe');
+            
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0');
+            container.classList.remove('scale-100');
+            container.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.style.display = '';
+                document.body.style.overflow = ''; 
+                iframe.src = ""; 
+                
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+                if (screen.orientation && screen.orientation.unlock) {
+                    screen.orientation.unlock();
+                }
+            }, 300); 
+        }
+
+        // --- NEW: 3D TOUR MODAL LOGIC ---
+        function openTourModal() {
+            const modal = document.getElementById('tour-modal');
+            const container = document.getElementById('tour-modal-container');
+            const iframe = document.getElementById('tour-modal-iframe');
+            
+            iframe.src = "https://suzinguyenhoang.github.io/digitalartsandsciences/?fbclid=IwY2xjawSbNfFleHRuA2FlbQIxMABicmlkETFQRGh0OXJEUUh0clEwV0ZWc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmi8g20Chqw3USeeFBzUwC35mpMAEE_PjzuIBd3UXDtnjyC9bS-ECcNxfofP_aem_gZq2YMfyWeyFFlnPJg28uA";
+            
+            modal.classList.remove('hidden');
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+            
+            if (window.innerWidth < 768) {
+                if (modal.requestFullscreen) {
+                    modal.requestFullscreen().catch(err => console.log("Fullscreen API blocked by browser", err));
+                } else if (modal.webkitRequestFullscreen) {
+                    modal.webkitRequestFullscreen();
+                }
+                if (screen.orientation && screen.orientation.lock) {
+                    screen.orientation.lock('landscape').catch(err => console.log("Orientation lock not supported", err));
+                }
+            }
+
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+                container.classList.remove('scale-95');
+                container.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeTourModal() {
+            const modal = document.getElementById('tour-modal');
+            const container = document.getElementById('tour-modal-container');
+            const iframe = document.getElementById('tour-modal-iframe');
+            
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0');
+            container.classList.remove('scale-100');
+            container.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.style.display = '';
+                document.body.style.overflow = ''; 
+                iframe.src = ""; 
+                
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+                if (screen.orientation && screen.orientation.unlock) {
+                    screen.orientation.unlock();
+                }
+            }, 300); 
+        }
+
+        // --- 2. CLIPPINGS CAROUSEL LOGIC ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const clippings = [
+                {
+                    img: "https://i.postimg.cc/SstPLGwH/newspaper-old-stuff.png",
+                    titleVi: "Những kỷ vật của thầy Thảo",
+                    titleEn: "Mr. Thảo's Memorabilia",
+                    ocrVi: `<p class="mb-4 font-bold">Thầy giáo Nguyễn Đình Thảo và những kỷ vật kháng chiến</p>
+                            <p class="mb-4">Ở khối 3, phường Trường Thi (thành phố Vinh), nhiều người biết Nguyễn Đình Thảo là thầy giáo dạy Vật lý "có tiếng" ở Trường THPT Huỳnh Thúc Kháng nhưng ít người biết đó là một trong những người lính của sư đoàn chủ lực 304 có mặt tại Dinh Độc Lập trưa ngày 30-4-1975.</p>
+                            <p class="mb-4">Trong kí ức của người thầy giáo - người cựu chiến binh quê gốc Can Lộc (Hà Tĩnh) thì những ngày tháng tham gia chiến dịch Hồ Chí Minh với những trận đánh lịch sử "thần tốc, thần tốc, quyết thắng" tiến vào giải phóng Sài Gòn mãi mãi không bao giờ mờ phai. Ký ức đó, thầy giáo Thảo thường kể lại cho học trò nghe mỗi dịp trường mít tinh kỷ niệm chiến thắng 30-4 hay những diễn đàn, gặp gỡ nhân chứng lịch sử giáo dục truyền thống cho thế hệ trẻ.</p>
+                            <p class="mb-4">Và ông có hẳn riêng một "bộ sưu tập" những kỷ vật kháng chiến để ở nơi trang trọng nhất trong nhà. Những kỷ vật đơn sơ luôn được cất giữ, nâng niu. Đó là chiếc mũ cối đã ngả màu, chiếc ba lô sờn vải, bi đông nước, thắt lưng dù, cà mèn, đôi dép cao su, con dao găm sờn gỉ, túi cứu thương, võng dù... đã theo ông trong suốt những chặng đường hành quân ra tiền tuyến, cùng ông xông pha trong những trận đánh lớn : giải phóng Quảng Trị, giải phóng chi khu Thượng Đức, giải phóng Thành phố Đà Nẵng, đánh Đèo Cù Mông, sân bay Thành Sơn, Thị xã Hàm Tân....</p>
+                            <p class="mb-4">Những kỉ vật ấy nhắc ông nhớ lại những mốc đáng nhớ của cuộc đời từ khi rời tay cầm phấn dạy học ở trường phổ thông cấp III Vụ Bản (Nam Hà) để cầm súng. Ông chia sẻ "Với tôi, chúng không chỉ đơn giản là những kỉ vật kháng chiến mà còn là ký ức về một quá khứ hào hùng. Nó nhắc nhở người lính chúng tôi dù trong bất cứ hoàn cảnh nào cũng phải giữ vững phẩm chất của anh bộ đội Cụ Hồ."</p>
+                            <p class="italic">Bài, ảnh: HUY - THANH</p>`,
+                    ocrEn: `<p class="mb-4 font-bold">Teacher Nguyễn Đình Thảo and his resistance war memorabilia</p>
+                            <p class="mb-4">In Block 3, Trường Thi Ward (Vinh City), many people know Nguyễn Đình Thảo as a "famous" physics teacher at Huỳnh Thúc Kháng High School, but few know he was one of the soldiers of the 304th main division present at the Independence Palace on the noon of April 30, 1975.</p>
+                            <p class="mb-4">In the memories of the teacher - a veteran originally from Can Lộc (Hà Tĩnh), the days participating in the Hồ Chí Minh campaign with historical battles of "lightning speed, lightning speed, certain victory" advancing to liberate Saigon will never fade. Mr. Thảo often recounts those memories to his students every time the school holds a meeting to celebrate the April 30 victory or at forums meeting historical witnesses to educate the younger generation about tradition.</p>
+                            <p class="mb-4">And he has his own "collection" of resistance memorabilia placed in the most solemn place in his house. The simple memorabilia is always kept and cherished. That is the faded pith helmet, the frayed backpack, water canteen, parachute belt, mess tin, rubber sandals, rusty dagger, first aid kit, parachute hammock... that followed him throughout the marches to the front line, accompanying him in major battles: liberating Quảng Trị, liberating Thượng Đức sub-region, liberating Đà Nẵng City, fighting at Cù Mông Pass, Thành Sơn airport, Hàm Tân Town....</p>
+                            <p class="mb-4">Those memorabilia remind him of the memorable milestones of his life since leaving the chalk teaching at Vụ Bản Level III General School (Nam Hà) to hold a gun. He shared, "To me, they are not simply resistance memorabilia but also memories of a heroic past. It reminds us soldiers that in any circumstance, we must maintain the qualities of Uncle Hồ's soldiers."</p>
+                            <p class="italic">Article, photos: HUY - THANH</p>`,
+                    analysis: "This public article acts as a formal inventory for the digital humanities project. It publicly validates his specific collection of artifacts—the pith helmet, the Soviet dagger, the rubber sandals—proving that these objects physically carried him through the war before he returned to civilian life."
+                },
+                {
+                    img: "https://i.postimg.cc/d3bSpVtM/Soldier-of-30-4.png",
+                    titleVi: "Gặp mặt những người lính 30-4",
+                    titleEn: "Meeting the soldiers of April 30",
+                    ocrVi: `<p class="mb-4">Cứ mỗi lần sắp đến ngày 30-4 là mấy anh em cùng trung đoàn 66 chúng tôi lại gặp nhau để hàn huyên tâm sự. Năm nay ngày 21/4/2010 bốn anh em chúng tôi hội ngộ tại nhà anh Hoàng Trọng Tình - Thiếu tướng, nguyên Phó chính ủy Quân khu 4. Anh Tình mở đầu cuộc gặp nói: Năm nay kỷ niệm 35 năm ngày giải phóng Miền Nam thống nhất Tổ quốc trông mặt ai cũng hớn hở, vui tươi chắc là sẽ thổ lộ nhiều ký ức đẹp về ngày lịch sử lắm đây.</p>
+                            <p class="mb-4">Anh Nguyễn Đình Thảo hồ hởi nói: Hồi ấy tôi là trợ lý ban chính trị thường đi cùng với Phó chính ủy trung đoàn Lê Xuân Lộc. Khi quân ta đã chiếm được Dinh Độc lập, lúc đó đã hơn 11h30, không khí chiến thắng đầy ắp mọi con đường, ngõ phố.</p>
+                            <p class="mb-4">Chúng tôi đi ra bên ngoài Dinh Độc Lập, một nhóm thanh niên, học sinh, sinh viên vây quanh chúng tôi, người thì xin được đội mũ tai bèo, người thì đòi được xỏ chân vào đôi dép lốp cao su của anh giải phóng, rồi kéo nhau cùng chụp ảnh chung, reo cười thoải mái.</p>`,
+                    ocrEn: `<p class="mb-4">Every time April 30 approaches, the brothers in the 66th regiment meet to reminisce and confide. This year, on April 21, 2010, four of us gathered at the house of Mr. Hoàng Trọng Tình - Major General, former Deputy Political Commissar of Military Region 4. Mr. Tình opened the meeting saying: This year celebrates the 35th anniversary of the liberation of the South and the reunification of the Fatherland, everyone looks radiant and happy, surely they will reveal many beautiful memories of that historic day.</p>
+                            <p class="mb-4">Mr. Nguyễn Đình Thảo enthusiastically said: At that time I was a political assistant often accompanying the regimental deputy political commissar Lê Xuân Lộc. When our army captured the Independence Palace, it was past 11:30 AM, the atmosphere of victory filled every street and alley.</p>
+                            <p class="mb-4">We went outside the Independence Palace, a group of youth and students surrounded us, some asked to wear the floppy hat, some demanded to put their feet into the liberation soldier's rubber sandals, then pulled each other to take pictures together, cheering freely.</p>`,
+                    analysis: "This excerpt captures the exact moment of transition for these objects. Outside the Independence Palace, the pith helmet and rubber sandals transformed instantly from vital tools of survival into public symbols of victory and peace. They were no longer just gear; they became artifacts of a new era."
+                },
+                {
+                    img: "https://i.postimg.cc/yxtwKTj5/Excellent-teacher.png",
+                    titleVi: "78 thầy cô giáo đạt danh hiệu dạy giỏi",
+                    titleEn: "78 teachers achieve excellent teacher title",
+                    ocrVi: `<p class="mb-4 font-bold">78 thầy cô giáo các trường PTTH đạt danh hiệu giáo viên dạy giỏi</p>
+                            <p class="mb-4">Trong 4 ngày cuối tháng 12 năm 1992, Sở giáo dục đào tạo đã tổ chức hội thi chọn giáo viên dạy giỏi bộ môn ở các trường PTTH. 111 thầy cô giáo của 21 trường đã tham dự cuộc thi.</p>
+                            <p class="mb-4">78 thầy cô giáo đã đạt danh hiệu giáo viên dạy giỏi bộ môn cấp tỉnh năm học 1992-1993, trong đó 18 người đạt điểm giỏi, 60 người đạt điểm khá. Các trường đạt thành tích cao là:</p>
+                            <ul class="list-disc pl-5 mb-4 space-y-1">
+                                <li>Trường PTTH Hà Huy Tập, dự thi 8 người, 5 người loại tốt, 2 người loại khá.</li>
+                                <li>Trường PTTH Nghi Lộc 1, dự thi 15 người, 3 người loại tốt, 8 người loại khá.</li>
+                                <li>Trường PTTH Thanh Chương 1, dự thi 7 người, 2 người loại tốt, 5 người loại khá.</li>
+                                <li>Trường PTTH Huỳnh Thúc Kháng, dự thi 4 người, 2 người đạt loại tốt, 1 người loại khá.</li>
+                            </ul>
+                            <p class="mb-4">Trong số 18 người đạt điểm giỏi, 7 người đạt vào loại xuất sắc là:</p>
+                            <ul class="list-disc pl-5 mb-4 space-y-1">
+                                <li>Thầy Hoàng Đình Hồng, giáo viên địa trường PTTH Thanh Chương 3.</li>
+                                <li>Thầy Nguyễn Đình Hiếu, giáo viên thể dục trường PTTH Thanh Chương 1.</li>
+                                <li>Thầy Trần Xuân Cường, giáo viên văn trường PTTH Hà Huy Tập.</li>
+                                <li>Thầy Chu Văn Phú, giáo viên toán trường PTTH Hà Huy Tập.</li>
+                                <li>Thầy Đào Thái, giáo viên toán trường PTTH Diễn Châu 3.</li>
+                                <li><span class="bg-brass-500/20 px-1 font-bold">Thầy Nguyễn Đình Thảo, giáo viên lý trường PTTH Huỳnh Thúc Kháng.</span></li>
+                                <li>Thầy Bùi Xuân Bách, giáo viên hóa trường PTTH Phan Đăng Lưu.</li>
+                            </ul>
+                            <p class="mb-4">Giám đốc Sở giáo dục - đào tạo đã ký quyết định khen thưởng kịp thời 50 thầy cô giáo đạt điểm cao trong hội thi với số tiền là 2.040.000 đồng.</p>
+                            <p class="italic">HUY NAM</p>`,
+                    ocrEn: `<p class="mb-4 font-bold">78 high school teachers achieve the title of excellent teachers</p>
+                            <p class="mb-4">In the last 4 days of December 1992, the Department of Education and Training organized a competition to select excellent subject teachers in high schools. 111 teachers from 21 schools participated in the competition.</p>
+                            <p class="mb-4">78 teachers achieved the title of excellent provincial subject teacher for the 1992-1993 school year, of which 18 achieved excellent marks and 60 achieved good marks. The schools with high achievements are:</p>
+                            <ul class="list-disc pl-5 mb-4 space-y-1">
+                                <li>Ha Huy Tap High School, 8 participants, 5 excellent, 2 good.</li>
+                                <li>Nghi Loc 1 High School, 15 participants, 3 excellent, 8 good.</li>
+                                <li>Thanh Chuong 1 High School, 7 participants, 2 excellent, 5 good.</li>
+                                <li>Huynh Thuc Khang High School, 4 participants, 2 excellent, 1 good.</li>
+                            </ul>
+                            <p class="mb-4">Among the 18 people who achieved excellent marks, 7 achieved outstanding status:</p>
+                            <ul class="list-disc pl-5 mb-4 space-y-1">
+                                <li>Mr. Hoang Dinh Hong, geography teacher at Thanh Chuong 3 High School.</li>
+                                <li>Mr. Nguyen Dinh Hieu, physical education teacher at Thanh Chuong 1 High School.</li>
+                                <li>Mr. Tran Xuan Cuong, literature teacher at Ha Huy Tap High School.</li>
+                                <li>Mr. Chu Van Phu, math teacher at Ha Huy Tap High School.</li>
+                                <li>Mr. Dao Thai, math teacher at Dien Chau 3 High School.</li>
+                                <li><span class="bg-brass-500/20 px-1 font-bold">Mr. Nguyen Dinh Thao, physics teacher at Huynh Thuc Khang High School.</span></li>
+                                <li>Mr. Bui Xuan Bach, chemistry teacher at Phan Dang Luu High School.</li>
+                            </ul>
+                            <p class="mb-4">The Director of the Department of Education and Training signed a timely reward decision for 50 teachers who achieved high scores in the competition with an amount of 2,040,000 VND.</p>
+                            <p class="italic">HUY NAM</p>`,
+                    analysis: "This clipping establishes Mr. Thảo's dual identity. It highlights a profound theme of the project: resilience. The hands that once held a Soviet dagger in the jungle returned to holding chalk in a classroom, resuming a normal, celebrated civilian life."
+                }
+            ];
+
+            let currentIndex = 0;
+            let currentLang = 'vi'; 
+            let analysisOpen = false;
+
+            const imgEl = document.getElementById('carousel-img');
+            const titleEl = document.getElementById('carousel-title');
+            const ocrEl = document.getElementById('carousel-ocr');
+            const counterEl = document.getElementById('slide-counter');
+            
+            const toggleBtn = document.getElementById('toggle-analysis-btn');
+            const toggleText = document.getElementById('toggle-text');
+            const analysisContainer = document.getElementById('analysis-container');
+            const analysisText = document.getElementById('carousel-analysis');
+            
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            const langToggleBtn = document.getElementById('lang-toggle-btn');
+            const langToggleText = document.getElementById('lang-toggle-text');
+
+            function renderContent() {
+                const data = clippings[currentIndex];
+                if(currentLang === 'vi') {
+                    titleEl.innerHTML = data.titleVi;
+                    ocrEl.innerHTML = data.ocrVi;
+                    langToggleText.innerText = "Translate to English";
+                } else {
+                    titleEl.innerHTML = data.titleEn;
+                    ocrEl.innerHTML = data.ocrEn;
+                    langToggleText.innerText = "View Original Vietnamese";
+                }
+                analysisText.innerHTML = data.analysis;
+                counterEl.innerText = `${currentIndex + 1} / ${clippings.length}`;
+                ocrEl.parentElement.scrollTop = 0;
+            }
+
+            function updateSlide(index) {
+                imgEl.style.opacity = 0;
+                titleEl.style.opacity = 0;
+                ocrEl.style.opacity = 0;
+
+                setTimeout(() => {
+                    imgEl.src = clippings[index].img;
+                    renderContent();
+                    
+                    imgEl.style.opacity = 0.9;
+                    titleEl.style.opacity = 1;
+                    ocrEl.style.opacity = 1;
+                }, 300);
+
+                if(analysisOpen) toggleAnalysis(); 
+            }
+
+            function toggleAnalysis() {
+                analysisOpen = !analysisOpen;
+                if (analysisOpen) {
+                    analysisContainer.classList.remove('hidden');
+                    setTimeout(() => {
+                        analysisContainer.classList.remove('opacity-0', 'translate-y-4');
+                        analysisContainer.classList.add('opacity-100', 'translate-y-0');
+                    }, 50);
+                    toggleText.innerText = "Hide Analysis";
+                    ocrEl.parentElement.classList.add('opacity-30'); 
+                } else {
+                    analysisContainer.classList.remove('opacity-100', 'translate-y-0');
+                    analysisContainer.classList.add('opacity-0', 'translate-y-4');
+                    setTimeout(() => {
+                        analysisContainer.classList.add('hidden');
+                    }, 500);
+                    toggleText.innerText = "Deep Dive: View Analysis";
+                    ocrEl.parentElement.classList.remove('opacity-30');
+                }
+            }
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex === 0) ? clippings.length - 1 : currentIndex - 1;
+                updateSlide(currentIndex);
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex === clippings.length - 1) ? 0 : currentIndex + 1;
+                updateSlide(currentIndex);
+            });
+
+            toggleBtn.addEventListener('click', toggleAnalysis);
+
+            langToggleBtn.addEventListener('click', () => {
+                currentLang = (currentLang === 'vi') ? 'en' : 'vi';
+                titleEl.style.opacity = 0;
+                ocrEl.style.opacity = 0;
+                setTimeout(() => {
+                    renderContent();
+                    titleEl.style.opacity = 1;
+                    ocrEl.style.opacity = 1;
+                }, 200);
+            });
+
+            updateSlide(currentIndex);
+        });
+
+        // --- 4. TEAM MEMBERS SLIDER LOGIC ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const teamMembers = [
+                {
+                    name: "Nguyễn Hoàng Nhi",
+                    img: "https://i.postimg.cc/nzwVdxC6/Nhi.jpg",
+                    showOverlay: false,
+                    tasks: [
+                        "Proposed the project idea and facilitated communication with Mr. Nguyễn Đình Thảo.",
+                        "Coordinated access to artifacts, documents, and historical materials.",
+                        "Designed and implemented the Marzipano virtual exhibition environment.",
+                        "Integrated 360° spaces, interactive hotspots, and navigation systems.",
+                        "Assisted with website deployment and GitHub hosting."
+                    ]
+                },
+                {
+                    name: "Nguyễn Lan Phương",
+                    img: "https://i.postimg.cc/L8d5Kmvr/Lan-Phuong.jpg",
+                    showOverlay: false,
+                    tasks: [
+                        "Conducted interview flow and questions.",
+                        "Processed interview transcripts and transformed oral histories into exhibition texts.",
+                        "Researched and documented selected artifacts.",
+                        "Developed the interpretive framework, thematic connections, and final project structure."
+                    ]
+                },
+                {
+                    name: "Chu Thị Minh Nguyệt",
+                    img: "https://i.postimg.cc/P5mxd0RX/Chu-Thi-Minh-Nguyet.jpg",
+                    showOverlay: false,
+                    tasks: [
+                        "Led content writing and narrative development.",
+                        "Conducted and hosted the oral history interview with Mr. Thảo.",
+                        "Developed the content outline and exhibition narrative structure.",
+                        "Contributed to content writing and artifact descriptions.",
+                        "Processed and edited audio materials used throughout the exhibition."
+                    ]
+                },
+                {
+                    name: "Nguyễn Phan Hoàng Vy",
+                    img: "https://i.postimg.cc/c4tCbv7m/Hoang-vy.jpg",
+                    showOverlay: false,
+                    tasks: [
+                        "Developed the interactive story map and geographic visualization of wartime locations.",
+                        "Documented and organized archival materials, including certificates, commendations, diaries, and personal records.",
+                        "Contributed to historical contextualization, supporting documentation, and the project’s spatial storytelling component.",
+                        "Managed field equipment logistics, including device preparation, handling, transportation, and return of borrowed equipment."
+                    ]
+                },
+                {
+                    name: "Nguyễn Bảo Phương",
+                    img: "https://i.postimg.cc/cLmvQVM3/Phuong.jpg",
+                    showOverlay: true, 
+                    tasks: [
+                        "Developed the main project website and supported technical implementation.",
+                        "Performed OCR processing for historical documents, diaries, poems, certificates, and newspaper materials.",
+                        "Assisted with integrating digitized content into the exhibition platform."
+                    ]
+                }
+            ];
+
+            let currentTeamIndex = 0;
+            const teamImg = document.getElementById('team-img');
+            const teamName = document.getElementById('team-name');
+            const teamTasks = document.getElementById('team-tasks');
+            const teamOverlay = document.getElementById('team-img-overlay');
+            const teamWrapper = document.getElementById('team-content-wrapper');
+            
+            const btnPrevTeam = document.getElementById('team-prev');
+            const btnNextTeam = document.getElementById('team-next');
+
+            function updateTeamSlide(index) {
+                const data = teamMembers[index];
+                
+                teamWrapper.style.opacity = 0;
+
+                setTimeout(() => {
+                    teamImg.src = data.img;
+                    teamName.innerText = data.name;
+                    
+                    const tasksHtml = data.tasks.map(t => `<li>${t}</li>`).join('');
+                    teamTasks.innerHTML = tasksHtml;
+
+                    if (data.showOverlay) {
+                        teamOverlay.classList.remove('hidden');
+                    } else {
+                        teamOverlay.classList.add('hidden');
+                    }
+
+                    teamWrapper.style.opacity = 1;
+                }, 300);
+            }
+
+            btnPrevTeam.addEventListener('click', () => {
+                currentTeamIndex = (currentTeamIndex === 0) ? teamMembers.length - 1 : currentTeamIndex - 1;
+                updateTeamSlide(currentTeamIndex);
+            });
+
+            btnNextTeam.addEventListener('click', () => {
+                currentTeamIndex = (currentTeamIndex === teamMembers.length - 1) ? 0 : currentTeamIndex + 1;
+                updateTeamSlide(currentTeamIndex);
+            });
+
+            updateTeamSlide(currentTeamIndex);
+        });
+    </script>
+</body>
+</html>
